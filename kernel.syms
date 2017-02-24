@@ -1,0 +1,1432 @@
+
+kernel.elf:     file format elf32-littlearm
+
+SYMBOL TABLE:
+00008000 l    d  .init	00000000 .init
+00010000 l    d  .text	00000000 .text
+0003fdc4 l    d  .rodata	00000000 .rodata
+00042fac l    d  .rodata.npio2_hw	00000000 .rodata.npio2_hw
+0004302c l    d  .rodata.two_over_pi	00000000 .rodata.two_over_pi
+00043344 l    d  .rodata.init_jk	00000000 .rodata.init_jk
+00043350 l    d  .rodata.PIo2	00000000 .rodata.PIo2
+0004337c l    d  .text.cosf	00000000 .text.cosf
+00043428 l    d  .text.sinf	00000000 .text.sinf
+000434ec l    d  .text.__ieee754_rem_pio2f	00000000 .text.__ieee754_rem_pio2f
+0004394c l    d  .text.__kernel_cosf	00000000 .text.__kernel_cosf
+00043b68 l    d  .text.__kernel_rem_pio2f	00000000 .text.__kernel_rem_pio2f
+000444e8 l    d  .text.__kernel_sinf	00000000 .text.__kernel_sinf
+0004462c l    d  .text.fabsf	00000000 .text.fabsf
+00044634 l    d  .text.floorf	00000000 .text.floorf
+00044708 l    d  .text.scalbnf	00000000 .text.scalbnf
+00044830 l    d  .text.copysignf	00000000 .text.copysignf
+00044840 l    d  .data	00000000 .data
+00044990 l    d  .bss	00000000 .bss
+00000000 l    d  .debug_info	00000000 .debug_info
+00000000 l    d  .debug_abbrev	00000000 .debug_abbrev
+00000000 l    d  .debug_aranges	00000000 .debug_aranges
+00000000 l    d  .debug_line	00000000 .debug_line
+00000000 l    d  .debug_str	00000000 .debug_str
+00000000 l    d  .comment	00000000 .comment
+00000000 l    d  .ARM.attributes	00000000 .ARM.attributes
+00000000 l    d  .debug_frame	00000000 .debug_frame
+00000000 l    d  .debug_loc	00000000 .debug_loc
+00000000 l    d  .debug_ranges	00000000 .debug_ranges
+00000000 l    df *ABS*	00000000 /home/labuser/Downloads/RaspberryPi-FreeRTOS/build/Demo/startup.o
+00008020 l       .init	00000000 reset_handler
+00008024 l       .init	00000000 undefined_handler
+00008028 l       .init	00000000 swi_handler
+0000802c l       .init	00000000 prefetch_handler
+00008030 l       .init	00000000 data_handler
+00008034 l       .init	00000000 unused_handler
+00008038 l       .init	00000000 irq_handler
+0000803c l       .init	00000000 fiq_handler
+00008040 l       .init	00000000 reset
+00015bbc l       .text	00000000 undefined_instruction
+00015bc0 l       .text	00000000 prefetch_abort
+00015bc4 l       .text	00000000 data_abort
+00015bc8 l       .text	00000000 unused
+00015bcc l       .text	00000000 fiq
+0000805c l       .init	00000000 overHyped
+00008078 l       .init	00000000 continueBoot
+000080c0 l       .init	00000000 zero_loop
+00015bd0 l       .text	00000000 hang
+00000000 l    df *ABS*	00000000 port.c
+0003fdc4 l     O .rodata	00000004 pRegs
+000102a4 l     F .text	000000a4 prvSetupTimerInterrupt
+00000000 l    df *ABS*	00000000 portisr.c
+00000000 l    df *ABS*	00000000 croutine.c
+00044994 l       .bss	00000000 pxReadyCoRoutineLists
+000449bc l       .bss	00000000 xDelayedCoRoutineList1
+000449d0 l       .bss	00000000 xDelayedCoRoutineList2
+000449e4 l       .bss	00000000 pxDelayedCoRoutineList
+000449e8 l       .bss	00000000 pxOverflowDelayedCoRoutineList
+000449ec l       .bss	00000000 xPendingReadyCoRoutineList
+00044a04 l       .bss	00000000 uxTopCoRoutineReadyPriority
+00044a08 l       .bss	00000000 xCoRoutineTickCount
+00044a0c l       .bss	00000000 xLastTickCount
+00044a10 l       .bss	00000000 xPassedTicks
+00010e24 l     F .text	000000d0 prvInitialiseCoRoutineLists
+00010988 l     F .text	00000114 prvCheckPendingReadyList
+00010a9c l     F .text	00000224 prvCheckDelayedList
+00000000 l    df *ABS*	00000000 list.c
+00000000 l    df *ABS*	00000000 queue.c
+00011e70 l     F .text	00000190 prvCopyDataToQueue
+000122c8 l     F .text	0000007c prvIsQueueFull
+000120bc l     F .text	0000012c prvUnlockQueue
+00012000 l     F .text	000000bc prvCopyDataFromQueue
+000121e8 l     F .text	00000074 prvIsQueueEmpty
+00000000 l    df *ABS*	00000000 tasks.c
+00044a18 l       .bss	00000000 pxReadyTasksLists
+00044a7c l       .bss	00000000 xDelayedTaskList1
+00044a90 l       .bss	00000000 xDelayedTaskList2
+00044aa4 l       .bss	00000000 pxDelayedTaskList
+00044aa8 l       .bss	00000000 pxOverflowDelayedTaskList
+00044aac l       .bss	00000000 xPendingReadyList
+00044ac0 l       .bss	00000000 xTasksWaitingTermination
+00044ad4 l       .bss	00000000 uxTasksDeleted
+00044ad8 l       .bss	00000000 xSuspendedTaskList
+00044aec l       .bss	00000000 uxCurrentNumberOfTasks
+00044af0 l       .bss	00000000 xTickCount
+00044af4 l       .bss	00000000 uxTopUsedPriority
+00044af8 l       .bss	00000000 uxTopReadyPriority
+00044afc l       .bss	00000000 xSchedulerRunning
+00044b00 l       .bss	00000000 uxSchedulerSuspended
+00044b04 l       .bss	00000000 uxMissedTicks
+00044b08 l       .bss	00000000 xMissedYield
+00044b0c l       .bss	00000000 xNumOfOverflows
+00044b10 l       .bss	00000000 uxTaskNumber
+00044844 l     O .data	00000004 xNextTaskUnblockTime
+00013ea8 l     F .text	000000b4 prvAllocateTCBAndStack
+00013b9c l     F .text	000000c8 prvInitialiseTCBVariables
+00013c64 l     F .text	000000bc prvInitialiseTaskLists
+00013de8 l     F .text	000000c0 prvAddCurrentTaskToDelayedList
+0003fdc8 l       .rodata	00000000 .LC0
+00013b6c l     F .text	00000030 prvIdleTask
+00013d20 l     F .text	000000c8 prvCheckTasksWaitingTermination
+00013f5c l     F .text	00000030 prvDeleteTCB
+00000000 l    df *ABS*	00000000 event_groups.c
+00014a74 l     F .text	000000ac prvTestWaitCondition
+00000000 l    df *ABS*	00000000 interrupts.c
+00044b14 l       .bss	00000000 g_VectorTable
+0003fdd0 l     O .rodata	00000004 pRegs
+00014b20 l     F .text	00000018 irqEnable
+00014b38 l     F .text	00000018 irqDisable
+00014c4c l     F .text	00000020 stubHandler
+00000000 l    df *ABS*	00000000 gpio.c
+00000000 l    df *ABS*	00000000 heap_4.c
+00044d58 l       .bss	00000000 xHeap
+0003fdd8 l     O .rodata	00000002 heapSTRUCT_SIZE
+0003fddc l     O .rodata	00000004 xTotalHeapSize
+0004ed58 l       .bss	00000000 xStart
+0004ed60 l       .bss	00000000 pxEnd
+00044848 l     O .data	00000004 xFreeBytesRemaining
+00015950 l     F .text	00000118 prvHeapInit
+00015a68 l     F .text	00000154 prvInsertBlockIntoFreeList
+00000000 l    df *ABS*	00000000 main.c
+0003fde0 l       .rodata	00000000 .LC0
+0003fdfc l       .rodata	00000000 .LC1
+0003fe24 l       .rodata	00000000 .LC2
+0003fe40 l       .rodata	00000000 .LC3
+0003fe6c l       .rodata	00000000 .LC4
+0003fe98 l       .rodata	00000000 .LC5
+0003feb0 l       .rodata	00000000 .LC6
+0003fec4 l       .rodata	00000000 .LC7
+0003fed8 l       .rodata	00000000 .LC8
+0003fee0 l       .rodata	00000000 .LC9
+0003fee4 l       .rodata	00000000 .LC10
+0003fee8 l       .rodata	00000000 .LC11
+0003fef8 l       .rodata	00000000 .LC12
+0003fefc l       .rodata	00000000 .LC13
+0003ff04 l       .rodata	00000000 .LC14
+0003ff0c l       .rodata	00000000 .LC15
+0003ff14 l       .rodata	00000000 .LC16
+0003ff18 l       .rodata	00000000 .LC17
+0003ff1c l       .rodata	00000000 .LC18
+0003ff20 l       .rodata	00000000 .LC19
+0003ff24 l       .rodata	00000000 .LC20
+0003ff2c l       .rodata	00000000 .LC21
+0003ff3c l       .rodata	00000000 .LC22
+0003ff4c l       .rodata	00000000 .LC23
+0003ff58 l       .rodata	00000000 .LC24
+0003ff68 l       .rodata	00000000 .LC25
+00000000 l    df *ABS*	00000000 mailbox.c
+00000000 l    df *ABS*	00000000 trace.c
+00000000 l    df *ABS*	00000000 mem.c
+00000000 l    df *ABS*	00000000 video.c
+000401b8 l       .rodata	00000000 .LC0
+000401c8 l       .rodata	00000000 .LC1
+00000000 l    df *ABS*	00000000 uspibind.c
+000401d4 l       .rodata	00000000 .LC0
+000401e8 l       .rodata	00000000 .LC1
+000401fc l       .rodata	00000000 .LC2
+00040204 l       .rodata	00000000 .LC3
+00000000 l    df *ABS*	00000000 uspilibrary.c
+00040214 l     O .rodata	00000005 FromUSPi
+0004ed78 l       .bss	00000000 s_pLibrary
+0004021c l       .rodata	00000000 .LC0
+0004022c l       .rodata	00000000 .LC1
+0004027c l       .rodata	00000000 .LC2
+0004028c l       .rodata	00000000 .LC3
+000402bc l       .rodata	00000000 .LC4
+000402c4 l       .rodata	00000000 .LC5
+000402cc l       .rodata	00000000 .LC6
+000402d4 l       .rodata	00000000 .LC7
+000402dc l       .rodata	00000000 .LC8
+000402e4 l       .rodata	00000000 .LC9
+0004030c l       .rodata	00000000 .LC10
+00040324 l       .rodata	00000000 .LC11
+00040340 l       .rodata	00000000 .LC12
+00040358 l       .rodata	00000000 .LC13
+00040364 l       .rodata	00000000 .LC14
+00040370 l       .rodata	00000000 .LC15
+00000000 l    df *ABS*	00000000 dwhcidevice.c
+0004037c l     O .rodata	00000006 FromDWHCI
+00040384 l       .rodata	00000000 .LC0
+00040390 l       .rodata	00000000 .LC1
+000403e0 l       .rodata	00000000 .LC2
+000403f8 l       .rodata	00000000 .LC3
+00040408 l       .rodata	00000000 .LC4
+00040420 l       .rodata	00000000 .LC5
+00040438 l       .rodata	00000000 .LC6
+0004045c l       .rodata	00000000 .LC7
+00040478 l       .rodata	00000000 .LC8
+00040484 l       .rodata	00000000 .LC9
+00040490 l       .rodata	00000000 .LC10
+000404b0 l       .rodata	00000000 .LC11
+00040544 l       .rodata	00000000 .LC12
+00040554 l       .rodata	00000000 .LC13
+0004059c l       .rodata	00000000 .LC14
+000405b4 l       .rodata	00000000 .LC15
+000405f8 l       .rodata	00000000 .LC16
+0004060c l       .rodata	00000000 .LC17
+0004061c l       .rodata	00000000 .LC18
+00040640 l       .rodata	00000000 .LC19
+00040658 l       .rodata	00000000 .LC20
+00040678 l       .rodata	00000000 .LC21
+00040710 l       .rodata	00000000 .LC22
+00040714 l       .rodata	00000000 .LC23
+00040738 l       .rodata	00000000 .LC24
+0004075c l       .rodata	00000000 .LC25
+00040780 l       .rodata	00000000 .LC26
+000407c8 l       .rodata	00000000 .LC27
+000407f4 l       .rodata	00000000 .LC28
+00040804 l       .rodata	00000000 .LC29
+00040810 l       .rodata	00000000 .LC30
+00040820 l       .rodata	00000000 .LC31
+0004082c l       .rodata	00000000 .LC32
+00040834 l       .rodata	00000000 .LC33
+0004083c l       .rodata	00000000 .LC34
+00040844 l       .rodata	00000000 .LC35
+00040850 l       .rodata	00000000 .LC36
+0004085c l       .rodata	00000000 .LC37
+00040868 l       .rodata	00000000 .LC38
+0004087c l       .rodata	00000000 .LC39
+0004088c l       .rodata	00000000 .LC40
+000408a4 l       .rodata	00000000 .LC41
+000408b0 l       .rodata	00000000 .LC42
+000408c8 l       .rodata	00000000 .LC43
+000408dc l       .rodata	00000000 .LC44
+000408f4 l       .rodata	00000000 .LC45
+00040900 l       .rodata	00000000 .LC46
+00040918 l       .rodata	00000000 .LC47
+00040930 l       .rodata	00000000 .LC48
+00040944 l       .rodata	00000000 .LC49
+0004095c l       .rodata	00000000 .LC50
+00040974 l       .rodata	00000000 .LC51
+00000000 l    df *ABS*	00000000 dwhciregister.c
+0004098c l       .rodata	00000000 .LC0
+00040998 l       .rodata	00000000 .LC1
+000409ec l       .rodata	00000000 .LC2
+000409fc l       .rodata	00000000 .LC3
+00040a20 l       .rodata	00000000 .LC4
+00040a28 l       .rodata	00000000 .LC5
+00040a44 l       .rodata	00000000 .LC6
+00000000 l    df *ABS*	00000000 dwhcixferstagedata.c
+00040a64 l       .rodata	00000000 .LC0
+00040a70 l       .rodata	00000000 .LC1
+00040ac8 l       .rodata	00000000 .LC2
+00040adc l       .rodata	00000000 .LC3
+00040af4 l       .rodata	00000000 .LC4
+00040b0c l       .rodata	00000000 .LC5
+00040b28 l       .rodata	00000000 .LC6
+00040b44 l       .rodata	00000000 .LC7
+00040b64 l       .rodata	00000000 .LC8
+00040b90 l       .rodata	00000000 .LC9
+00040bb0 l       .rodata	00000000 .LC10
+00040bd8 l       .rodata	00000000 .LC11
+00040c14 l       .rodata	00000000 .LC12
+00040c30 l       .rodata	00000000 .LC13
+00040c34 l       .rodata	00000000 .LC14
+00040c54 l       .rodata	00000000 .LC15
+00000000 l    df *ABS*	00000000 usbconfigparser.c
+00040c78 l       .rodata	00000000 .LC0
+00040c84 l       .rodata	00000000 .LC1
+00040cd8 l       .rodata	00000000 .LC2
+00040cf0 l       .rodata	00000000 .LC3
+00040d00 l       .rodata	00000000 .LC4
+00040d24 l       .rodata	00000000 .LC5
+00040d34 l       .rodata	00000000 .LC6
+00000000 l    df *ABS*	00000000 usbdevice.c
+00040d64 l     O .rodata	00000007 FromDevice
+00044850 l     O .data	00000001 s_ucNextAddress
+00040d6c l       .rodata	00000000 .LC0
+00040d78 l       .rodata	00000000 .LC1
+00040dc8 l       .rodata	00000000 .LC2
+00040ddc l       .rodata	00000000 .LC3
+00040df8 l       .rodata	00000000 .LC4
+00040e14 l       .rodata	00000000 .LC5
+00040e2c l       .rodata	00000000 .LC6
+00040e3c l       .rodata	00000000 .LC7
+00040e58 l       .rodata	00000000 .LC8
+00040e80 l       .rodata	00000000 .LC9
+00040e9c l       .rodata	00000000 .LC10
+00040eb8 l       .rodata	00000000 .LC11
+00040ed4 l       .rodata	00000000 .LC12
+00040efc l       .rodata	00000000 .LC13
+00040f18 l       .rodata	00000000 .LC14
+00040f38 l       .rodata	00000000 .LC15
+00040f4c l       .rodata	00000000 .LC16
+00040f64 l       .rodata	00000000 .LC17
+00040f80 l       .rodata	00000000 .LC18
+00040fac l       .rodata	00000000 .LC19
+00040fd0 l       .rodata	00000000 .LC20
+00040ff4 l       .rodata	00000000 .LC21
+00041010 l       .rodata	00000000 .LC22
+00041030 l       .rodata	00000000 .LC23
+00041040 l       .rodata	00000000 .LC24
+0004104c l       .rodata	00000000 .LC25
+00041058 l       .rodata	00000000 .LC26
+00041068 l       .rodata	00000000 .LC27
+00041074 l       .rodata	00000000 .LC28
+00041078 l       .rodata	00000000 .LC29
+00041080 l       .rodata	00000000 .LC30
+00000000 l    df *ABS*	00000000 usbdevicefactory.c
+000410a0 l       .rodata	00000000 .LC0
+000410b0 l       .rodata	00000000 .LC1
+00041104 l       .rodata	00000000 .LC2
+00041114 l       .rodata	00000000 .LC3
+00041120 l       .rodata	00000000 .LC4
+0004112c l       .rodata	00000000 .LC5
+0004113c l       .rodata	00000000 .LC6
+00041148 l       .rodata	00000000 .LC7
+00041154 l       .rodata	00000000 .LC8
+00041160 l       .rodata	00000000 .LC9
+0004116c l       .rodata	00000000 .LC10
+00041178 l       .rodata	00000000 .LC11
+00041180 l       .rodata	00000000 .LC12
+00000000 l    df *ABS*	00000000 usbendpoint.c
+00041190 l       .rodata	00000000 .LC0
+0004119c l       .rodata	00000000 .LC1
+000411ec l       .rodata	00000000 .LC2
+00041204 l       .rodata	00000000 .LC3
+00041210 l       .rodata	00000000 .LC4
+00041230 l       .rodata	00000000 .LC5
+00041260 l       .rodata	00000000 .LC6
+00041264 l       .rodata	00000000 .LC7
+00041274 l       .rodata	00000000 .LC8
+0004129c l       .rodata	00000000 .LC9
+000412c4 l       .rodata	00000000 .LC10
+00041338 l       .rodata	00000000 .LC11
+00000000 l    df *ABS*	00000000 usbrequest.c
+0004135c l       .rodata	00000000 .LC0
+00041368 l       .rodata	00000000 .LC1
+000413b8 l       .rodata	00000000 .LC2
+000413d0 l       .rodata	00000000 .LC3
+00041400 l       .rodata	00000000 .LC4
+00041414 l       .rodata	00000000 .LC5
+00041454 l       .rodata	00000000 .LC6
+00041470 l       .rodata	00000000 .LC7
+00000000 l    df *ABS*	00000000 usbstandardhub.c
+00041494 l     O .rodata	00000007 FromHub
+0004149c l       .rodata	00000000 .LC0
+000414a8 l       .rodata	00000000 .LC1
+000414fc l       .rodata	00000000 .LC2
+00041510 l       .rodata	00000000 .LC3
+0004152c l       .rodata	00000000 .LC4
+00041548 l       .rodata	00000000 .LC5
+00041554 l       .rodata	00000000 .LC6
+0004156c l       .rodata	00000000 .LC7
+00041584 l       .rodata	00000000 .LC8
+0004159c l       .rodata	00000000 .LC9
+000415b8 l       .rodata	00000000 .LC10
+000415cc l       .rodata	00000000 .LC11
+000415e4 l       .rodata	00000000 .LC12
+000415f4 l       .rodata	00000000 .LC13
+00041608 l       .rodata	00000000 .LC14
+00041620 l       .rodata	00000000 .LC15
+00041640 l       .rodata	00000000 .LC16
+00041660 l       .rodata	00000000 .LC17
+00041680 l       .rodata	00000000 .LC18
+000416b8 l       .rodata	00000000 .LC19
+000416d0 l       .rodata	00000000 .LC20
+000416e8 l       .rodata	00000000 .LC21
+0004170c l       .rodata	00000000 .LC22
+0004172c l       .rodata	00000000 .LC23
+0004174c l       .rodata	00000000 .LC24
+00041758 l       .rodata	00000000 .LC25
+00041774 l       .rodata	00000000 .LC26
+00041798 l       .rodata	00000000 .LC27
+000417b4 l       .rodata	00000000 .LC28
+000417d8 l       .rodata	00000000 .LC29
+000417e8 l       .rodata	00000000 .LC30
+00041800 l       .rodata	00000000 .LC31
+0004181c l       .rodata	00000000 .LC32
+0004182c l       .rodata	00000000 .LC33
+0004183c l       .rodata	00000000 .LC34
+00041848 l       .rodata	00000000 .LC35
+00041850 l       .rodata	00000000 .LC36
+00000000 l    df *ABS*	00000000 devicenameservice.c
+0004ed7c l       .bss	00000000 s_pThis
+00041854 l       .rodata	00000000 .LC0
+00041860 l       .rodata	00000000 .LC1
+000418b8 l       .rodata	00000000 .LC2
+000418c8 l       .rodata	00000000 .LC3
+000418e4 l       .rodata	00000000 .LC4
+000418f0 l       .rodata	00000000 .LC5
+000418fc l       .rodata	00000000 .LC6
+00041910 l       .rodata	00000000 .LC7
+00041920 l       .rodata	00000000 .LC8
+00041934 l       .rodata	00000000 .LC9
+00000000 l    df *ABS*	00000000 macaddress.c
+00041944 l       .rodata	00000000 .LC0
+00041950 l       .rodata	00000000 .LC1
+000419a0 l       .rodata	00000000 .LC2
+000419b0 l       .rodata	00000000 .LC3
+000419c0 l       .rodata	00000000 .LC4
+000419d0 l       .rodata	00000000 .LC5
+000419e0 l       .rodata	00000000 .LC6
+00000000 l    df *ABS*	00000000 smsc951x.c
+00041a00 l     O .rodata	00000009 FromSMSC951x
+0004ed80 l       .bss	00000000 s_nDeviceNumber
+00041a0c l       .rodata	00000000 .LC0
+00041a18 l       .rodata	00000000 .LC1
+00041a64 l       .rodata	00000000 .LC2
+00041a7c l       .rodata	00000000 .LC3
+00041a94 l       .rodata	00000000 .LC4
+00041aa8 l       .rodata	00000000 .LC5
+00041ac4 l       .rodata	00000000 .LC6
+00041ae0 l       .rodata	00000000 .LC7
+00041afc l       .rodata	00000000 .LC8
+00041b14 l       .rodata	00000000 .LC9
+00041b28 l       .rodata	00000000 .LC10
+00041b30 l       .rodata	00000000 .LC11
+00041b40 l       .rodata	00000000 .LC12
+00041b60 l       .rodata	00000000 .LC13
+00041b80 l       .rodata	00000000 .LC14
+00041b98 l       .rodata	00000000 .LC15
+00041bb8 l       .rodata	00000000 .LC16
+00041bcc l       .rodata	00000000 .LC17
+00041be0 l       .rodata	00000000 .LC18
+00041bfc l       .rodata	00000000 .LC19
+00041c04 l       .rodata	00000000 .LC20
+00041c0c l       .rodata	00000000 .LC21
+00041c14 l       .rodata	00000000 .LC22
+00041c1c l       .rodata	00000000 .LC23
+00041c24 l       .rodata	00000000 .LC24
+00041c2c l       .rodata	00000000 .LC25
+00041c38 l       .rodata	00000000 .LC26
+00041c40 l       .rodata	00000000 .LC27
+00041c50 l       .rodata	00000000 .LC28
+00041c5c l       .rodata	00000000 .LC29
+00041c64 l       .rodata	00000000 .LC30
+00041c70 l       .rodata	00000000 .LC31
+00041c7c l       .rodata	00000000 .LC32
+00041c88 l       .rodata	00000000 .LC33
+00041c90 l       .rodata	00000000 .LC34
+00041c98 l       .rodata	00000000 .LC35
+00041ca0 l       .rodata	00000000 .LC36
+00041ca8 l       .rodata	00000000 .LC37
+00041cb0 l       .rodata	00000000 .LC38
+00041cb8 l       .rodata	00000000 .LC39
+00000000 l    df *ABS*	00000000 string.c
+00041cc0 l       .rodata	00000000 .LC0
+00041ccc l       .rodata	00000000 .LC1
+00041d18 l       .rodata	00000000 .LC2
+00000000 l    df *ABS*	00000000 util.c
+00000000 l    df *ABS*	00000000 usbmassdevice.c
+00044854 l     O .data	00000004 s_nDeviceNumber
+00041d1c l     O .rodata	00000005 FromUmsd
+00041d24 l       .rodata	00000000 .LC0
+00041d30 l       .rodata	00000000 .LC1
+00041d84 l       .rodata	00000000 .LC2
+00041da0 l       .rodata	00000000 .LC3
+00041dbc l       .rodata	00000000 .LC4
+00041dd8 l       .rodata	00000000 .LC5
+00041df0 l       .rodata	00000000 .LC6
+00041e10 l       .rodata	00000000 .LC7
+00041e28 l       .rodata	00000000 .LC8
+00041e3c l       .rodata	00000000 .LC9
+00041e54 l       .rodata	00000000 .LC10
+00041e70 l       .rodata	00000000 .LC11
+00041e8c l       .rodata	00000000 .LC12
+00041ea4 l       .rodata	00000000 .LC13
+00041eac l       .rodata	00000000 .LC14
+00041ebc l       .rodata	00000000 .LC15
+00041ecc l       .rodata	00000000 .LC16
+00041edc l       .rodata	00000000 .LC17
+00041eec l       .rodata	00000000 .LC18
+00041f10 l       .rodata	00000000 .LC19
+00041f30 l       .rodata	00000000 .LC20
+00041f3c l       .rodata	00000000 .LC21
+00041f50 l       .rodata	00000000 .LC22
+00041f68 l       .rodata	00000000 .LC23
+00041f7c l       .rodata	00000000 .LC24
+00041f94 l       .rodata	00000000 .LC25
+00041fa8 l       .rodata	00000000 .LC26
+00041fc0 l       .rodata	00000000 .LC27
+00041fd4 l       .rodata	00000000 .LC28
+00041ff4 l       .rodata	00000000 .LC29
+00000000 l    df *ABS*	00000000 dwhciframeschednper.c
+00042014 l       .rodata	00000000 .LC0
+00042020 l       .rodata	00000000 .LC1
+00042078 l       .rodata	00000000 .LC2
+0004207c l       .rodata	00000000 .LC3
+000420a0 l       .rodata	00000000 .LC4
+000420a8 l       .rodata	00000000 .LC5
+00000000 l    df *ABS*	00000000 dwhciframeschedper.c
+000420bc l       .rodata	00000000 .LC0
+000420c8 l       .rodata	00000000 .LC1
+00042120 l       .rodata	00000000 .LC2
+00042124 l       .rodata	00000000 .LC3
+00042148 l       .rodata	00000000 .LC4
+00042150 l       .rodata	00000000 .LC5
+00000000 l    df *ABS*	00000000 keymap.c
+00044858 l     O .data	000000cc s_KeyStrings
+00042244 l     O .rodata	00000180 s_DefaultMap
+000423c4 l       .rodata	00000000 .LC41
+000423d0 l       .rodata	00000000 .LC42
+00000000 l    df *ABS*	00000000 usbkeyboard.c
+00044924 l     O .data	00000004 s_nDeviceNumber
+0004241c l     O .rodata	00000007 FromUSBKbd
+00042424 l       .rodata	00000000 .LC0
+00042430 l       .rodata	00000000 .LC1
+00042480 l       .rodata	00000000 .LC2
+0004249c l       .rodata	00000000 .LC3
+000424bc l       .rodata	00000000 .LC4
+000424dc l       .rodata	00000000 .LC5
+000424f8 l       .rodata	00000000 .LC6
+00042510 l       .rodata	00000000 .LC7
+0004252c l       .rodata	00000000 .LC8
+0002b634 l     F .text	00000198 USBKeyboardDeviceStartRequest
+00042534 l       .rodata	00000000 .LC9
+0004254c l       .rodata	00000000 .LC10
+00042568 l       .rodata	00000000 .LC11
+00042580 l       .rodata	00000000 .LC12
+0004259c l       .rodata	00000000 .LC13
+0002b468 l     F .text	000001cc USBKeyboardDeviceGenerateKeyEvent
+0002b9bc l     F .text	0000007c USBKeyboardDeviceGetModifiers
+000425ac l       .rodata	00000000 .LC14
+000425c0 l       .rodata	00000000 .LC15
+0002b7cc l     F .text	000001f0 USBKeyboardDeviceCompletionRoutine
+000425d4 l       .rodata	00000000 .LC16
+000425e0 l       .rodata	00000000 .LC17
+0002ba38 l     F .text	000000c4 USBKeyboardDeviceGetKeyCode
+00000000 l    df *ABS*	00000000 dwhcirootport.c
+000425f8 l     O .rodata	00000007 FromDWHCIRoot
+00042600 l       .rodata	00000000 .LC0
+0004260c l       .rodata	00000000 .LC1
+00042660 l       .rodata	00000000 .LC2
+00042674 l       .rodata	00000000 .LC3
+00042690 l       .rodata	00000000 .LC4
+000426a8 l       .rodata	00000000 .LC5
+000426c0 l       .rodata	00000000 .LC6
+000426cc l       .rodata	00000000 .LC7
+000426dc l       .rodata	00000000 .LC8
+000426f4 l       .rodata	00000000 .LC9
+00042708 l       .rodata	00000000 .LC10
+00042720 l       .rodata	00000000 .LC11
+00000000 l    df *ABS*	00000000 usbmouse.c
+00044928 l     O .data	00000004 s_nDeviceNumber
+00042738 l     O .rodata	00000007 FromUSBKbd
+00042740 l       .rodata	00000000 .LC0
+0004274c l       .rodata	00000000 .LC1
+00042798 l       .rodata	00000000 .LC2
+000427b4 l       .rodata	00000000 .LC3
+000427d4 l       .rodata	00000000 .LC4
+000427f4 l       .rodata	00000000 .LC5
+00042810 l       .rodata	00000000 .LC6
+00042828 l       .rodata	00000000 .LC7
+00042844 l       .rodata	00000000 .LC8
+0002c6bc l     F .text	00000198 USBMouseDeviceStartRequest
+00042850 l       .rodata	00000000 .LC9
+00042864 l       .rodata	00000000 .LC10
+00042878 l       .rodata	00000000 .LC11
+0002c854 l     F .text	000001cc USBMouseDeviceCompletionRoutine
+0004288c l       .rodata	00000000 .LC12
+00042898 l       .rodata	00000000 .LC13
+00000000 l    df *ABS*	00000000 dwhciframeschednsplit.c
+000428b0 l       .rodata	00000000 .LC0
+000428bc l       .rodata	00000000 .LC1
+00042918 l       .rodata	00000000 .LC2
+00000000 l    df *ABS*	00000000 usbgamepad.c
+0004492c l     O .data	00000004 s_nDeviceNumber
+0004291c l     O .rodata	00000007 FromUSBPad
+00042924 l       .rodata	00000000 .LC0
+00042930 l       .rodata	00000000 .LC1
+00042980 l       .rodata	00000000 .LC2
+0002d144 l     F .text	00000284 BitGetUnsigned
+0002d3c8 l     F .text	000000b4 BitGetSigned
+0002d47c l     F .text	000006bc USBGamePadDeviceDecodeReport
+0004299c l       .rodata	00000000 .LC3
+000429b8 l       .rodata	00000000 .LC4
+000429d4 l       .rodata	00000000 .LC5
+000429f8 l       .rodata	00000000 .LC6
+00042a1c l       .rodata	00000000 .LC7
+00042a38 l       .rodata	00000000 .LC8
+00042a50 l       .rodata	00000000 .LC9
+0002e598 l     F .text	00000188 USBGamePadDevicePS3Configure
+0002e1c4 l     F .text	000001a4 USBGamePadDeviceStartRequest
+00042a58 l       .rodata	00000000 .LC10
+00042a6c l       .rodata	00000000 .LC11
+00042a80 l       .rodata	00000000 .LC12
+0002e368 l     F .text	00000174 USBGamePadDeviceCompletionRoutine
+00042a94 l       .rodata	00000000 .LC13
+00042aa0 l       .rodata	00000000 .LC14
+00044930 l     O .data	00000030 writeBuf.5033
+00044960 l     O .data	00000005 leds.5034
+00000000 l    df *ABS*	00000000 synchronize.c
+0004ed84 l       .bss	00000000 s_nCriticalLevel
+0004ed88 l       .bss	00000000 s_bWereEnabled
+00042ab8 l       .rodata	00000000 .LC0
+00042ad0 l       .rodata	00000000 .LC1
+00000000 l    df *ABS*	00000000 usbstring.c
+00042b20 l       .rodata	00000000 .LC0
+00042b2c l       .rodata	00000000 .LC1
+00042b7c l       .rodata	00000000 .LC2
+00042b94 l       .rodata	00000000 .LC3
+00042bac l       .rodata	00000000 .LC4
+00042bbc l       .rodata	00000000 .LC5
+00042bd8 l       .rodata	00000000 .LC6
+00042bf0 l       .rodata	00000000 .LC7
+00042bfc l       .rodata	00000000 .LC8
+00042c20 l       .rodata	00000000 .LC9
+00042c48 l       .rodata	00000000 .LC10
+00042c60 l       .rodata	00000000 .LC11
+00042c74 l       .rodata	00000000 .LC12
+00042c90 l       .rodata	00000000 .LC13
+00000000 l    df *ABS*	00000000 FreeRTOS_ARP.c
+0004ed8c l       .bss	00000000 xARPCache
+0004ee04 l       .bss	00000000 xLastGratuitousARPTime
+00042cb4 l     O .rodata	00000026 xDefaultPartARPPacketHeader
+0002fd50 l     F .text	00000118 prvCacheLookup
+00000000 l    df *ABS*	00000000 FreeRTOS_DHCP.c
+00000000 l    df *ABS*	00000000 FreeRTOS_DNS.c
+0003028c l     F .text	00000078 usChar2u16
+0004ee08 l       .bss	00000000 usIdentifier.5581
+000303a8 l     F .text	00000210 prvGetHostByName
+00030ae0 l     F .text	00000134 prvCreateDNSSocket
+000305b8 l     F .text	000001ac prvCreateDNSMessage
+0004ee0c l       .bss	00000000 ulAddressLength.5593
+00030890 l     F .text	00000250 prvParseDNSReply
+00042cdc l     O .rodata	0000000c xDefaultPartDNSHeader.5611
+00030764 l     F .text	000000ac prvSkipNameField
+0004ee10 l       .bss	00000000 xSocket.5647
+00000000 l    df *ABS*	00000000 FreeRTOS_IP.c
+0004ee48 l       .bss	00000000 xNetworkDownEventPending
+0004ee4c l       .bss	00000000 xIPTaskHandle
+0004ee50 l       .bss	00000000 xProcessedTCPMessage
+0004ee54 l       .bss	00000000 xNetworkUp
+0004ee58 l       .bss	00000000 xARPTimer
+0004ee6c l       .bss	00000000 xTCPTimer
+0004ee80 l       .bss	00000000 xIPTaskInitialised
+00042cf0 l       .rodata	00000000 .LC0
+00042d04 l       .rodata	00000000 .LC1
+00030c14 l     F .text	00000240 prvIPTask
+0003123c l     F .text	00000060 prvIPTimerReload
+00031040 l     F .text	00000164 prvCheckNetworkTimers
+00030f80 l     F .text	000000c0 prvCalculateSleepTime
+00031f10 l     F .text	00000070 prvProcessNetworkDownEvent
+00030ed0 l     F .text	000000b0 prvHandleEthernetPacket
+00031fd8 l     F .text	0000010c prvProcessEthernetPacket
+0003129c l     F .text	000000dc prvIPTimerCheck
+0004ee84 l       .bss	00000000 xStart.6457
+000311a4 l     F .text	00000098 prvIPTimerStart
+00042d9c l     O .rodata	00000008 xNetworkDownEvent.6478
+00042da4 l     O .rodata	00000008 xNetworkDownEvent.6483
+00042d0c l       .rodata	00000000 .LC2
+00042d14 l       .rodata	00000000 .LC3
+00042d4c l       .rodata	00000000 .LC4
+0003228c l     F .text	000001f0 prvProcessIPPacket
+000320e4 l     F .text	000001a8 prvAllowIPPacket
+00042d88 l       .rodata	00000000 .LC5
+00032568 l     F .text	0000008c prvProcessICMPPacket
+0003247c l     F .text	000000ec prvProcessICMPEchoRequest
+00000000 l    df *ABS*	00000000 FreeRTOS_Sockets.c
+00032f8c l     F .text	00000064 FreeRTOS_max_uint32
+00032ff0 l     F .text	00000064 FreeRTOS_min_int32
+00033054 l     F .text	00000064 FreeRTOS_min_uint32
+000330b8 l     F .text	0000007c FreeRTOS_round_up
+00033134 l     F .text	00000074 vStreamBufferClear
+000331a8 l     F .text	000000a0 uxStreamBufferSpace
+00033248 l     F .text	0000009c uxStreamBufferDistance
+000332e4 l     F .text	00000070 uxStreamBufferGetSpace
+00033354 l     F .text	00000070 uxStreamBufferFrontSpace
+000333c4 l     F .text	00000070 uxStreamBufferGetSize
+00033434 l     F .text	000000a4 uxStreamBufferGetPtr
+000334d8 l     F .text	0000004c uxGetRxEventCount
+00044968 l     O .data	00000004 usNextPortToUse
+00033524 l     F .text	000000cc prvValidSocket
+000336e8 l     F .text	000000e8 prvDetermineSocketSize
+00042dac l       .rodata	00000000 .LC0
+00042dd0 l       .rodata	00000000 .LC1
+00034a64 l     F .text	00000174 prvGetPrivatePortNumber
+00034bd8 l     F .text	000000d0 pxListFindListItemWithValue
+00042df0 l       .rodata	00000000 .LC2
+00034414 l     F .text	00000114 prvTCPSetSocketCount
+00042e10 l       .rodata	00000000 .LC3
+00042e14 l       .rodata	00000000 .LC4
+00042e18 l       .rodata	00000000 .LC5
+00042e1c l       .rodata	00000000 .LC6
+00042e20 l       .rodata	00000000 .LC7
+00042e44 l       .rodata	00000000 .LC8
+0003505c l     F .text	00000080 bMayConnect
+000350dc l     F .text	000001fc prvTCPConnectStart
+00035a0c l     F .text	00000134 prvTCPSendCheck
+000364c0 l     F .text	000001b0 prvTcpCreateStream
+0004ee88 l       .bss	00000000 xLastTime.6634
+00042e70 l       .rodata	00000000 .LC9
+00000000 l    df *ABS*	00000000 FreeRTOS_Stream_Buffer.c
+00036f04 l     F .text	00000064 FreeRTOS_min_uint32
+00036f68 l     F .text	000000a0 uxStreamBufferSpace
+00037008 l     F .text	0000009c uxStreamBufferDistance
+000370a4 l     F .text	00000070 uxStreamBufferGetSpace
+00037114 l     F .text	00000070 uxStreamBufferGetSize
+00037184 l     F .text	000000f0 xStreamBufferLessThenEqual
+00000000 l    df *ABS*	00000000 FreeRTOS_TCP_IP.c
+00037660 l     F .text	00000064 FreeRTOS_max_int32
+000376c4 l     F .text	00000064 FreeRTOS_min_int32
+00037728 l     F .text	00000064 FreeRTOS_min_uint32
+0003778c l     F .text	000000a0 uxStreamBufferSpace
+0003782c l     F .text	0000009c uxStreamBufferDistance
+000378c8 l     F .text	00000070 uxStreamBufferGetSpace
+00037938 l     F .text	00000070 uxStreamBufferFrontSpace
+000379a8 l     F .text	00000070 uxStreamBufferMidSpace
+00037a18 l     F .text	000000b8 vStreamBufferMoveMid
+00037ad0 l     F .text	00000090 ulChar2u32
+00037b60 l     F .text	00000078 usChar2u16
+00037bd8 l     F .text	0000004c uxGetRxEventCount
+00037c24 l     F .text	00000098 prvTCPSocketIsActive
+0003983c l     F .text	000000c8 prvTCPAddTxData
+000380b0 l     F .text	000005c0 prvTCPReturnPacket
+000396e0 l     F .text	0000015c prvTCPNextTimeout
+00037e4c l     F .text	00000178 prvTCPSendPacket
+00037fc4 l     F .text	000000ec prvTCPSendRepeated
+00038730 l     F .text	00000320 prvTCPPrepareConnect
+00038d9c l     F .text	000000e4 prvSetSynAckOptions
+000392b0 l     F .text	00000430 prvTCPPrepareSend
+00038670 l     F .text	000000c0 prvTCPCreateWindow
+0003af90 l     F .text	000000fc prvSocketSetMSS
+00038a50 l     F .text	0000034c prvCheckOptions
+00038e80 l     F .text	00000044 prvTCPTouchSocket
+00042e94 l       .rodata	00000000 .LC0
+00039118 l     F .text	00000198 prvTCPBufferResize
+00039904 l     F .text	000002a0 prvTCPHandleFin
+00039ba4 l     F .text	000001c0 prvCheckRxData
+00039d64 l     F .text	000001dc prvStoreRxData
+0003aefc l     F .text	00000094 prvTCPSendReset
+00039f40 l     F .text	00000218 prvSetOptions
+0003a158 l     F .text	000002cc prvHandleSynReceived
+0003a424 l     F .text	0000040c prvHandleEstablished
+0003a830 l     F .text	00000308 prvSendData
+00042eb8 l       .rodata	00000000 .LC1
+0003ab38 l     F .text	000003c4 prvTCPHandleState
+0003b490 l     F .text	00000288 prvHandleListen
+00042ef8 l       .rodata	00000000 .LC2
+0003b718 l     F .text	000001e0 prvTCPSocketCopy
+00042f18 l       .rodata	00000000 .LC3
+00042f1c l       .rodata	00000000 .LC4
+00042f20 l       .rodata	00000000 .LC5
+00000000 l    df *ABS*	00000000 FreeRTOS_TCP_WIN.c
+0003ba2c l     F .text	00000064 FreeRTOS_min_int32
+0003ba90 l     F .text	00000064 FreeRTOS_min_uint32
+0004ee90 l       .bss	00000000 xTCPSegments
+0004ee94 l       .bss	00000000 xSegmentList
+0003baf4 l     F .text	0000006c xSequenceLessThanOrEqual
+0003bb60 l     F .text	00000070 xSequenceLessThan
+0003bbd0 l     F .text	00000070 xSequenceGreaterThan
+0003bc40 l     F .text	0000006c xSequenceGreaterThanOrEqual
+0003bcac l     F .text	00000060 vListInsertFifo
+0003bd0c l     F .text	00000054 vTCPTimerSet
+0003bd60 l     F .text	00000060 ulTimerGetAge
+0003be64 l     F .text	00000178 prvCreateSectors
+0003bfdc l     F .text	000000c0 xTCPWindowRxFind
+0003c09c l     F .text	00000154 xTCPWindowNew
+0003c2b8 l     F .text	0000008c xTCPWindowGetHead
+0003c344 l     F .text	00000084 xTCPWindowPeekHead
+0003c3c8 l     F .text	000000c0 vTCPWindowFree
+0003c7c8 l     F .text	00000190 xTCPWindowRxConfirm
+0003cd38 l     F .text	00000088 lTCPIncrementTxPosition
+0003d160 l     F .text	0000013c prvTCPWindowTxHasSpace
+0003d7a0 l     F .text	00000328 prvTCPWindowTxCheckAck
+0003dac8 l     F .text	00000184 prvTCPWindowFastRetransmit
+00000000 l    df *ABS*	00000000 FreeRTOS_UDP_IP.c
+00000000 l    df *ABS*	00000000 BufferAllocation_2.c
+0004eeac l       .bss	00000000 xFreeBuffersList
+0004eec0 l       .bss	00000000 uxMinimumFreeNetworkBuffers
+0004eec4 l       .bss	00000000 xNetworkBufferDescriptors
+0004f518 l       .bss	00000000 xNetworkBufferSemaphore
+00000000 l    df *ABS*	00000000 NetworkInterface.c
+00042f48 l       .rodata	00000000 .LC0
+00042f54 l       .rodata	00000000 .LC1
+00042f5c l       .rodata	00000000 .LC2
+00042f6c l       .rodata	00000000 .LC3
+0004f520 l       .bss	00000000 pxNextNetworkBufferDescriptor.5526
+00044984 l     O .data	00000008 xRxEvent.5529
+00042f70 l       .rodata	00000000 .LC4
+00042f88 l       .rodata	00000000 .LC5
+00042fa4 l       .rodata	00000000 .LC6
+00000000 l    df *ABS*	00000000 _udivsi3.o
+0003ebe4 l       .text	00000000 .udivsi3_skip_div0_test
+00000000 l    df *ABS*	00000000 _dvmd_tls.o
+00000000 l    df *ABS*	00000000 _arm_addsubdf3.o
+00000000 l    df *ABS*	00000000 _arm_muldivdf3.o
+00000000 l    df *ABS*	00000000 _arm_fixdfsi.o
+00000000 l    df *ABS*	00000000 _arm_truncdfsf2.o
+00000000 l    df *ABS*	00000000 _arm_addsubsf3.o
+00000000 l    df *ABS*	00000000 _arm_muldivsf3.o
+00000000 l    df *ABS*	00000000 _arm_cmpsf2.o
+00000000 l    df *ABS*	00000000 _arm_fixsfsi.o
+00000000 l    df *ABS*	00000000 sf_cos.c
+00000000 l    df *ABS*	00000000 sf_sin.c
+00000000 l    df *ABS*	00000000 ef_rem_pio2.c
+00042fac l     O .rodata.npio2_hw	00000080 npio2_hw
+0004302c l     O .rodata.two_over_pi	00000318 two_over_pi
+00000000 l    df *ABS*	00000000 kf_cos.c
+00000000 l    df *ABS*	00000000 kf_rem_pio2.c
+00043344 l     O .rodata.init_jk	0000000c init_jk
+00043350 l     O .rodata.PIo2	0000002c PIo2
+00000000 l    df *ABS*	00000000 kf_sin.c
+00000000 l    df *ABS*	00000000 sf_fabs.c
+00000000 l    df *ABS*	00000000 sf_floor.c
+00000000 l    df *ABS*	00000000 sf_scalbn.c
+00000000 l    df *ABS*	00000000 sf_copysign.c
+0002a05c g     F .text	000001c0 DWHCIFrameSchedulerPeriodicTransactionComplete
+0002ab9c g     F .text	00000148 USBKeyboardDevice
+00034d30 g     F .text	000001f8 FreeRTOS_inet_addr
+000367bc g     F .text	000000a8 FreeRTOS_outstanding
+000300d4 g     F .text	00000080 FreeRTOS_OutputARPRequest
+0001f4a8 g     F .text	00000078 DWHCITransferStageDataGetMaxPacketSize
+0001754c g     F .text	0000008c strcpy
+0003e7d0 g     F .text	000002b4 ethernetPollTask
+0001e11c g     F .text	000000ac DWHCIRegisterOr
+00018774 g     F .text	00000054 CancelKernelTimer
+000136e0 g     F .text	000000e8 vTaskPlaceOnUnorderedEventList
+000158cc g     F .text	0000004c xPortGetFreeHeapSize
+00025258 g     F .text	000000d8 MACAddressIsEqual
+00014710 g     F .text	0000006c xEventGroupGetBitsFromISR
+00016dd4 g     F .text	0000009c mailboxWrite
+0001ee18 g     F .text	000000a0 DWHCITransferStageDataSetSplitComplete
+00022730 g     F .text	00000128 USBEndpointCopy
+00028eac g     F .text	000001c0 USBBulkOnlyMassStorageDeviceTryRead
+00010270 g     F .text	00000034 vTickISR
+000229e4 g     F .text	00000078 USBEndpointGetType
+0002cdf4 g     F .text	0000020c USBGamePadDevice
+00031f80 g     F .text	00000058 vIPNetworkUpCalls
+00034ca8 g     F .text	00000088 pxUDPSocketLookup
+00022b4c g     F .text	00000078 USBEndpointGetMaxPacketSize
+00028168 g     F .text	00000078 uspi_char2int
+00031c34 g     F .text	000001bc xSendEventStructToIPTask
+00010614 g     F .text	000000b4 vPortExitCritical
+0002cd5c g     F .text	00000098 DWHCIFrameSchedulerNoSplitIsOddFrame
+0001de8c g     F .text	000000a0 DWHCIRegisterGet
+0003f0b8 g     F .text	00000060 .hidden __floatdidf
+000128bc g     F .text	00000058 uxTaskPriorityGet
+000339ec g     F .text	00000258 FreeRTOS_recvfrom
+00027c20 g     F .text	000000a0 uspi_memcpy2
+0002e720 g     F .text	00000074 uspi_EnterCritical
+0001892c g     F .text	00000154 GetMACAddress
+00028da4 g     F .text	00000090 USBBulkOnlyMassStorageDeviceSeek
+000283a4 g     F .text	000000ec _USBBulkOnlyMassStorageDevice
+00014e3c g     F .text	000000d8 DisableInterrupt
+00030810 g     F .text	00000080 ulDNSHandlePacket
+0001e47c g     F .text	000000d4 DWHCIRegisterDump
+00042f44 g     O .rodata	00000004 xBufferAllocFixedSize
+0003b08c g     F .text	00000404 xProcessReceivedTCPPacket
+0004ee1c g     O .bss	00000002 usPacketIdentifier
+0002f194 g     F .text	00000084 USBStringGet
+00021a8c g     F .text	000000a0 USBDeviceGetEndpoint0
+00036ea4 g     F .text	00000060 FreeRTOS_netstat
+00022bc4 g     F .text	000000a0 USBEndpointGetInterval
+00029d28 g     F .text	000000e8 DWHCIFrameSchedulerPeriodic
+0001f8c0 g     F .text	00000078 DWHCITransferStageDataGetPacketsToTransfer
+000342ac g     F .text	00000168 vSocketClose
+000299a8 g     F .text	00000108 DWHCIFrameSchedulerNonPeriodicCompleteSplit
+0003faf4 g     F .text	00000160 .hidden __divsf3
+00018b14 g     F .text	0000005c DebugHexdump
+0002d000 g     F .text	00000144 _CUSBGamePadDevice
+00019900 g     F .text	000000e4 USPiSendFrame
+00026e34 g     F .text	0000008c StringCompare
+0002bba8 g     F .text	000000b0 _DWHCIRootPort
+0001e1c8 g     F .text	000000dc DWHCIRegisterClearBit
+000142c4 g     F .text	000001c0 xEventGroupSync
+0001f2e4 g     F .text	00000114 DWHCITransferStageDataGetEndpointType
+00023684 g     F .text	000000b0 USBRequestCallCompletionRoutine
+00026ec0 g     F .text	000000dc StringFind
+0002038c g     F .text	00000074 _USBConfigurationParser
+000352d8 g     F .text	00000150 FreeRTOS_connect
+00017300 g     F .text	000000e0 memmove
+00010ef4 g     F .text	000000bc xCoRoutineRemoveFromEventList
+000118b4 g     F .text	0000010c xQueueGenericSendFromISR
+0001ba28 g     F .text	00000108 DWHCIDeviceFlushTxFIFO
+0003fd68 g     F .text	0000005c .hidden __fixsfsi
+000151fc g     F .text	000001fc EnableGpioDetect
+000295bc g     F .text	00000218 USBBulkOnlyMassStorageDeviceReset
+000255e0 g     F .text	000000e0 MACAddressIsBroadcast
+000191b4 g     F .text	000000bc USPiKeyboardRegisterKeyStatusHandlerRaw
+0004ee20 g     O .bss	00000014 xNetworkAddressing
+000434ec g     F .text.__ieee754_rem_pio2f	00000460 __ieee754_rem_pio2f
+00044a14 g     O .bss	00000004 pxCurrentTCB
+0003171c g     F .text	000002fc FreeRTOS_IPInit
+00014b50 g     F .text	000000fc irqHandler
+000170bc g     F .text	000001b4 __cyg_profile_func_exit
+00014f44 g     F .text	000000f8 SetGpioFunction
+00019270 g     F .text	00000090 USPiMouseAvailable
+000298b0 g     F .text	0000007c _DWHCIFrameSchedulerNonPeriodic
+0004ee8c g     O .bss	00000004 ulNextInitialSequenceNumber
+00023120 g     F .text	000000a0 USBRequestGetEndpoint
+00022038 g     F .text	00000350 GetDevice
+00036c58 g     F .text	000000a4 FreeRTOS_issocketconnected
+0001d5e4 g     F .text	000000f4 DWHCIDeviceGetPortSpeed
+0003f6bc g     F .text	000001bc .hidden __aeabi_fadd
+0001bdd4 g     F .text	0000024c DWHCIDeviceTransferStageAsync
+0003f6b8 g     F .text	000001c0 .hidden __subsf3
+00012914 g     F .text	000001c4 vTaskPrioritySet
+0002646c g     F .text	000000e0 SMSC951xDeviceWriteReg
+000253e4 g     F .text	0000008c MACAddressSetBroadcast
+0001fd48 g     F .text	000000a0 DWHCITransferStageDataGetTransactionStatus
+00022a5c g     F .text	00000078 USBEndpointIsDirectionIn
+00014484 g     F .text	00000200 xEventGroupWaitBits
+0001d104 g     F .text	00000184 DWHCIDeviceTimerHandler
+00029ab0 g     F .text	000001e4 DWHCIFrameSchedulerNonPeriodicTransactionComplete
+00037274 g     F .text	00000208 uxStreamBufferAdd
+0003ff78 g     O .rodata	00000240 font
+00038ec4 g     F .text	00000254 vTCPStateChange
+0002906c g     F .text	000001bc USBBulkOnlyMassStorageDeviceTryWrite
+0001b0d0 g     F .text	0000030c DWHCIDeviceInitHost
+00026b6c g     F .text	000000e8 StringSet
+00010240 g     F .text	0000001c xPortStartScheduler
+00012f04 g     F .text	00000034 vTaskEndScheduler
+000080e0 g       .init	00000000 __module_entries_end
+00027028 g     F .text	0000073c StringFormatV
+00013640 g     F .text	000000a0 vTaskPlaceOnEventList
+0001dfb0 g     F .text	000000c0 DWHCIRegisterIsSet
+000123b8 g     F .text	00000268 xTaskGenericCreate
+00012be4 g     F .text	0000007c xTaskIsTaskSuspended
+00020d88 g     F .text	0000074c USBDeviceInitialize
+0003fd50 g     F .text	00000018 .hidden __aeabi_fcmpgt
+0003f03c g     F .text	00000028 .hidden __floatsidf
+00036cfc g     F .text	00000080 FreeRTOS_mss
+00023a1c g     F .text	00000504 USBStandardHubConfigure
+00020028 g     F .text	00000364 USBConfigurationParser
+0001f598 g     F .text	0000011c DWHCITransferStageDataGetPID
+00034f28 g     F .text	000000a8 FreeRTOS_GetLocalAddress
+0002f590 g     F .text	00000260 eARPProcessPacket
+00024c88 g     F .text	00000118 _DeviceNameService
+00015850 g     F .text	0000007c vPortFree
+00042ce8 g     O .rodata	00000006 xBroadcastMACAddress
+00031df0 g     F .text	00000120 eConsiderFrameForProcessing
+0002516c g     F .text	00000078 MACAddress2
+00017f28 g     F .text	00000128 drawChar
+000106d0 g     F .text	00000198 xCoRoutineCreate
+00024a3c g     F .text	0000019c USBStandardHubGetDeviceNames
+0001c790 g     F .text	000007a4 DWHCIDeviceChannelInterruptHandler
+00036dfc g     F .text	000000a8 FreeRTOS_rx_size
+00018b70 g     F .text	00000064 malloc
+0004f528 g     O .bss	00000004 graphVarQ
+0004ed70 g     O .bss	00000004 position_x
+0003ebe4 g     F .text	000000f4 .hidden __udivsi3
+00023238 g     F .text	00000078 USBRequestSetResultLen
+00021dc8 g     F .text	000000a8 USBDeviceConfigurationError
+0003f880 g     F .text	00000020 .hidden __aeabi_i2f
+00036d7c g     F .text	00000080 FreeRTOS_connstatus
+0001f234 g     F .text	000000b0 DWHCITransferStageDataGetDeviceAddress
+00022470 g     F .text	000002c0 USBEndpoint2
+0004f52c g     O .bss	00000004 graphWatQ
+00023824 g     F .text	00000178 _USBStandardHub
+000314ac g     F .text	000000a8 FreeRTOS_GetUDPPayloadBuffer
+00028bc4 g     F .text	000000f0 USBBulkOnlyMassStorageDeviceRead
+0003fc5c g     F .text	0000006c .hidden __lesf2
+0003d430 g     F .text	00000370 ulTCPWindowTxGet
+0001108c g     F .text	000000bc vListInsertEnd
+00011244 g     F .text	000000cc vListRemove
+00014244 g     F .text	00000080 xEventGroupCreate
+000297d4 g     F .text	000000dc DWHCIFrameSchedulerNonPeriodic
+00021614 g     F .text	00000298 USBDeviceGetName
+0003f018 g     F .text	00000024 .hidden __aeabi_ui2d
+00026a44 g     F .text	00000094 _String
+000278c8 g     F .text	00000154 StringReserveSpace
+00018050 g     F .text	0000006c drawString
+0003ecfc g     F .text	00000000 .hidden __aeabi_drsub
+0002992c g     F .text	0000007c DWHCIFrameSchedulerNonPeriodicStartSplit
+00015bdc g       .text	00000000 GET32
+00025a3c g     F .text	00000598 SMSC951xDeviceConfigure
+0002fbb0 g     F .text	000001a0 eARPGetCacheEntry
+000149cc g     F .text	00000054 vEventGroupSetBitsCallback
+00012d54 g     F .text	00000118 xTaskResumeFromISR
+00015bd4 g       .text	00000000 PUT32
+0004462c g     F .text.fabsf	00000008 fabsf
+0003e738 g     F .text	0000004c uxGetNumberOfFreeNetworkBuffers
+00030084 g     F .text	00000050 vARPSendGratuitous
+0002060c g     F .text	000000dc USBConfigurationParserError
+0001103c g     F .text	00000050 vListInitialiseItem
+00037cbc g     F .text	00000190 xTCPSocketCheck
+0001fc00 g     F .text	0000009c DWHCITransferStageDataGetSplitPosition
+00030e54 g     F .text	0000007c xIsCallingFromIPTask
+0002a464 g     F .text	00000044 _KeyMap
+0001e37c g     F .text	00000080 DWHCIRegisterClearAll
+0001f3f8 g     F .text	000000b0 DWHCITransferStageDataGetEndpointNumber
+0001f72c g     F .text	00000078 DWHCITransferStageDataIsStatusStage
+0002eb34 g     F .text	000000f4 _USBString
+0003f064 g     F .text	00000040 .hidden __extendsfdf2
+0003f3a8 g     F .text	0000020c .hidden __aeabi_ddiv
+00025fd4 g     F .text	00000078 SMSC951xDeviceGetMACAddress
+0003c658 g     F .text	00000170 vTCPWindowInit
+00027818 g     F .text	000000b0 StringPutString
+0003ed08 g     F .text	00000310 .hidden __adddf3
+0003fc64 g     F .text	00000064 .hidden __nesf2
+00023088 g     F .text	00000098 _USBRequest
+00010498 g     F .text	000000b8 vFreeRTOS_ISR
+00016e70 g     F .text	000000b4 mailboxRead
+0001f6b4 g     F .text	00000078 DWHCITransferStageDataIsDirectionIn
+0003f118 g     F .text	00000290 .hidden __aeabi_dmul
+000196b4 g     F .text	000000d0 USPiMassStorageDeviceGetCapacity
+0001477c g     F .text	000001c0 xEventGroupSetBits
+000444e8 g     F .text.__kernel_sinf	00000144 __kernel_sinf
+0004f524 g       .bss	00000000 __bss_end
+0002aacc g     F .text	000000d0 KeyMapGetLEDStatus
+0002ca20 g     F .text	000000ec DWHCIFrameSchedulerNoSplit
+0002e4dc g     F .text	000000bc USBGamePadDeviceGetReport
+0001fe74 g     F .text	0000009c DWHCITransferStageDataGetResultLen
+0003cdc0 g     F .text	00000338 lTCPWindowTxAdd
+0003f018 g     F .text	00000024 .hidden __floatunsidf
+00031a18 g     F .text	000000d0 FreeRTOS_GetAddressConfiguration
+00015678 g     F .text	000001d8 pvPortMalloc
+0002f218 g     F .text	00000378 USBStringGetLanguageID
+0004f540 g     O .bss	00000004 SCREEN_WIDTH
+00016934 g     F .text	00000088 sporadicTask
+00025330 g     F .text	000000b4 MACAddressSet
+000235c4 g     F .text	000000c0 USBRequestSetCompletionRoutine
+00011e14 g     F .text	0000005c vQueueDelete
+0001025c g     F .text	00000014 vPortEndScheduler
+00010fb0 g     F .text	0000008c vListInitialise
+0002349c g     F .text	000000b0 USBRequestGetBuffer
+00029e10 g     F .text	0000007c _DWHCIFrameSchedulerPeriodic
+0001f7a4 g     F .text	000000a4 DWHCITransferStageDataGetDMAAddress
+0001d288 g     F .text	000000f8 DWHCIDeviceAllocateChannel
+00018a80 g     F .text	00000034 LogWrite
+0004337c g     F .text.cosf	000000ac cosf
+00019300 g     F .text	000000bc USPiMouseRegisterStatusHandler
+0002698c g     F .text	000000b8 String2
+0003f610 g     F .text	000000a0 .hidden __aeabi_d2f
+000218ac g     F .text	00000078 USBDeviceGetAddress
+00027cc0 g     F .text	000000d8 uspi_memcmp
+0001c020 g     F .text	000001b4 DWHCIDeviceStartTransaction
+00013124 g     F .text	00000034 xTaskGetTickCount
+000116d8 g     F .text	000001dc xQueueGenericSend
+000208d8 g     F .text	00000340 USBDeviceCopy
+000335f0 g     F .text	000000f8 vNetworkSocketsInit
+0003f6b8 g     F .text	000001c0 .hidden __aeabi_fsub
+00036670 g     F .text	0000014c lTCPAddRxdata
+0003d0f8 g     F .text	00000068 xTCPWindowTxDone
+00022d1c g     F .text	00000190 USBEndpointSkipPID
+0004ee18 g     O .bss	00000004 uxRxEventCount
+0001eacc g     F .text	0000010c _DWHCITransferStageData
+0002296c g     F .text	00000078 USBEndpointGetNumber
+00020c18 g     F .text	00000170 _USBDevice
+0001e3fc g     F .text	00000080 DWHCIRegisterSetAll
+0003fd38 g     F .text	00000018 .hidden __aeabi_fcmpge
+0003f5b4 g     F .text	0000005c .hidden __fixdfsi
+0001e550 g     F .text	0000057c DWHCITransferStageData
+00018fac g     F .text	00000090 USPiKeyboardAvailable
+0004394c g     F .text.__kernel_cosf	0000021c __kernel_cosf
+0003f8b0 g     F .text	000000ac .hidden __floatdisf
+000080e0 g       .init	00000000 __module_entries_size
+0001d79c g     F .text	000000b0 DWHCIDeviceDisableRootPort
+0002354c g     F .text	00000078 USBRequestGetBufLen
+00027764 g     F .text	000000b4 StringPutChar
+0003e0bc g     F .text	00000184 xProcessReceivedUDPPacket
+0001b958 g     F .text	000000d0 DWHCIDeviceDisableChannelInterrupt
+0004f51c g     O .bss	00000004 xOutputQueue
+0003bdc0 g     F .text	000000a4 vListInsertGeneric
+0003fc54 g     F .text	00000074 .hidden __gtsf2
+00018518 g     F .text	00000130 videotest
+000137c8 g     F .text	00000114 xTaskRemoveFromEventList
+00025710 g     F .text	00000124 MACAddressFormat
+0004ee34 g     O .bss	00000014 xDefaultAddressing
+0002cb0c g     F .text	00000044 _DWHCIFrameSchedulerNoSplit
+0003ed08 g     F .text	00000310 .hidden __aeabi_dadd
+00014684 g     F .text	0000008c xEventGroupClearBits
+0003ea84 g     F .text	000000d8 xNetworkInterfaceInitialise
+0003c488 g     F .text	000000cc vTCPWindowDestroy
+000186ac g     F .text	0000005c usDelay
+0003fd20 g     F .text	00000018 .hidden __aeabi_fcmple
+0001d47c g     F .text	00000168 DWHCIDeviceWaitForBit
+0003f0a4 g     F .text	00000074 .hidden __aeabi_ul2d
+00029f14 g     F .text	00000148 DWHCIFrameSchedulerPeriodicCompleteSplit
+0002399c g     F .text	00000080 USBStandardHubInitialize
+00030240 g     F .text	0000004c FreeRTOS_ClearARP
+00025080 g     F .text	00000078 DeviceNameServiceGet
+0004ed68 g     O .bss	00000004 depth
+00012620 g     F .text	00000108 vTaskDelete
+0004f524 g     O .bss	00000001 s_bWereEnabled
+0002db38 g     F .text	000005f0 USBGamePadDeviceConfigure
+0002199c g     F .text	00000078 USBDeviceGetHubAddress
+0001b538 g     F .text	0000013c DWHCIDeviceReset
+00035f00 g     F .text	00000190 FreeRTOS_listen
+00019814 g     F .text	000000ec USPiGetMACAddress
+00032db8 g     F .text	0000004c FreeRTOS_GetNetmask
+0002a4a8 g     F .text	000000d8 KeyMapClearTable
+000103e0 g     F .text	000000b8 vPortYieldProcessor
+0003e3dc g     F .text	0000009c pucGetNetworkBuffer
+00026630 g     F .text	000000e4 SMSC951xDeviceDumpReg
+0004ed6c g     O .bss	00000001 loaded
+00022858 g     F .text	00000074 _USBEndpoint
+00027f48 g     F .text	0000009c uspi_strcpy
+000281e0 g     F .text	00000078 uspi_le2be16
+00015be4 g     F .text	00000048 task1
+00013a4c g     F .text	000000fc xTaskCheckForTimeOut
+00034528 g     F .text	0000053c FreeRTOS_setsockopt
+00010cc0 g     F .text	00000164 vCoRoutineSchedule
+00031620 g     F .text	000000a4 pxUDPPayloadBuffer_to_NetworkBuffer
+0001e2a4 g     F .text	000000d8 DWHCIRegisterSetBit
+00036bb0 g     F .text	000000a8 FreeRTOS_tx_size
+00024f28 g     F .text	00000158 DeviceNameServiceGetDevice
+00044a00 g     O .bss	00000004 pxCurrentCoRoutine
+000341e8 g     F .text	000000c4 FreeRTOS_closesocket
+0003ed04 g     F .text	00000314 .hidden __aeabi_dsub
+00008000 g       .init	00000000 _start
+0001fb28 g     F .text	000000d8 DWHCITransferStageDataGetHubPortAddress
+00036864 g     F .text	000000a8 FreeRTOS_recvcount
+00012f38 g     F .text	00000030 vTaskSuspendAll
+00033e64 g     F .text	00000194 FreeRTOS_bind
+0004f530 g     O .bss	00000004 waterQ
+00018834 g     F .text	000000f8 SetPowerStateOn
+00013158 g     F .text	00000038 xTaskGetTickCountFromISR
+0003f0a4 g     F .text	00000074 .hidden __floatundidf
+00015180 g     F .text	0000007c ReadGpio
+0002a328 g     F .text	00000098 DWHCIFrameSchedulerPeriodicIsOddFrame
+0001772c g     F .text	0000007c rand
+0004f5a8 g     O .bss	00000014 xBoundUdpSocketsList
+00036a10 g     F .text	000000f4 FreeRTOS_maywrite
+0003f880 g     F .text	00000020 .hidden __floatsisf
+0002654c g     F .text	000000e4 SMSC951xDeviceReadReg
+0002b330 g     F .text	0000009c USBKeyboardDeviceRegisterShutdownHandler
+000250f8 g     F .text	00000074 MACAddress
+00013408 g     F .text	00000058 vTaskSetApplicationTaskTag
+00021a14 g     F .text	00000078 USBDeviceGetHubPortNumber
+000140e8 g     F .text	000000d8 vTaskPriorityDisinherit
+00021bcc g     F .text	000000a0 USBDeviceGetDeviceDescriptor
+00022f48 g     F .text	00000140 USBRequest
+0001ebd8 g     F .text	00000240 DWHCITransferStageDataTransactionComplete
+000153f8 g     F .text	00000204 DisableGpioDetect
+0002604c g     F .text	00000184 SMSC951xDeviceSendFrame
+00025470 g     F .text	000000a0 MACAddressGet
+0001a7ec g     F .text	000000e4 DWHCIDeviceTransfer
+0002cc74 g     F .text	000000e8 DWHCIFrameSchedulerNoSplitWaitForFrame
+00019d78 g     F .text	00000274 USPiDeviceGetInformation
+00028e34 g     F .text	00000078 USBBulkOnlyMassStorageDeviceGetCapacity
+00027b90 g     F .text	00000090 uspi_memset
+0001dde4 g     F .text	000000a8 DWHCIRegisterWrite
+00013fbc g     F .text	0000012c vTaskPriorityInherit
+0003fd68 g     F .text	0000005c .hidden __aeabi_f2iz
+000175d8 g     F .text	000000d4 strncpy
+0001b3dc g     F .text	0000015c DWHCIDeviceEnableRootPort
+00012c60 g     F .text	000000f4 vTaskResume
+0003fc64 g     F .text	00000064 .hidden __eqsf2
+0001dd4c g     F .text	00000098 DWHCIRegisterRead
+00019784 g     F .text	00000090 USPiEthernetAvailable
+00032ea0 g     F .text	00000054 FreeRTOS_SetGatewayAddress
+0004f544 g     O .bss	00000004 SCREEN_HEIGHT
+00021c6c g     F .text	000000a0 USBDeviceGetConfigurationDescriptor
+00013538 g     F .text	00000108 vTaskSwitchContext
+00019fec g     F .text	000000d8 DWHCIDevice
+000155fc g     F .text	0000007c ClearGpioInterrupt
+0002b294 g     F .text	0000009c USBKeyboardDeviceRegisterSelectConsoleHandler
+000232b0 g     F .text	00000078 USBRequestGetStatus
+0003e784 g     F .text	0000004c uxGetMinimumFreeNetworkBuffers
+00023328 g     F .text	000000a0 USBRequestGetResultLength
+000282d8 g     F .text	000000cc USBBulkOnlyMassStorageDevice
+00018708 g     F .text	0000006c StartKernelTimer
+00032d20 g     F .text	0000004c FreeRTOS_GetGatewayAddress
+0001eeb8 g     F .text	00000078 DWHCITransferStageDataSetState
+000177f0 g     F .text	0000025c initFB
+0003faf4 g     F .text	00000160 .hidden __aeabi_fdiv
+0001b724 g     F .text	000000a0 DWHCIDeviceEnableCommonInterrupts
+0003f03c g     F .text	00000028 .hidden __aeabi_i2d
+00025924 g     F .text	00000118 _SMSC951xDevice
+0001f938 g     F .text	00000078 DWHCITransferStageDataIsSplit
+0001cf34 g     F .text	000001d0 DWHCIDeviceInterruptHandler
+00017480 g     F .text	000000cc memcmp
+00035c28 g     F .text	000002d8 FreeRTOS_send
+000280ac g     F .text	000000bc uspi_strcat
+000206e8 g     F .text	000001f0 USBDevice
+0003e4dc g     F .text	00000184 pxGetNetworkBufferWithDescriptor
+0003f8a0 g     F .text	000000bc .hidden __floatundisf
+00036090 g     F .text	000000cc FreeRTOS_shutdown
+00017cac g     F .text	0000027c drawCircle
+0003ecf8  w    F .text	00000004 .hidden __aeabi_ldiv0
+00012ad8 g     F .text	0000010c vTaskSuspend
+0003f3a8 g     F .text	0000020c .hidden __divdf3
+0001e070 g     F .text	000000ac DWHCIRegisterAnd
+00013190 g     F .text	00000024 uxTaskGetNumberOfTasks
+0003ddbc g     F .text	00000300 vProcessGeneratedUDPPacket
+0003f878 g     F .text	00000028 .hidden __aeabi_ui2f
+0004496c g     O .data	00000018 xDefaultPartUDPPacketHeader
+0002c11c g     F .text	000000dc _CUSBMouseDevice
+000131b4 g     F .text	00000254 vTaskIncrementTick
+0003f118 g     F .text	00000290 .hidden __muldf3
+00020400 g     F .text	00000078 USBConfigurationParserIsValid
+00017aac g     F .text	0000008c drawRect
+00036b04 g     F .text	000000ac FreeRTOS_tx_space
+00014d64 g     F .text	000000d8 EnableInterrupt
+0004ed74 g     O .bss	00000004 position_y
+00036334 g     F .text	00000130 pxTCPSocketLookup
+000080e0 g       .init	00000000 __module_entries_start
+00022eac g     F .text	0000009c USBEndpointResetPID
+00044708 g     F .text.scalbnf	00000128 scalbnf
+0001fa50 g     F .text	000000d8 DWHCITransferStageDataGetHubAddress
+0001dc44 g     F .text	00000094 DWHCIRegister2
+00034fd0 g     F .text	0000008c vWakeUpSocketUser
+0001493c g     F .text	00000090 vEventGroupDelete
+0003747c g     F .text	000001e4 uxStreamBufferGet
+0003dc4c g     F .text	00000098 ulTCPWindowTxAck
+0001dcd8 g     F .text	00000074 _DWHCIRegister
+0002a3c0 g     F .text	000000a4 KeyMap
+00015f98 g     F .text	000006b4 graphWater
+0004f548 g     O .bss	00000004 framebuffer
+0003fc64 g     F .text	00000064 .hidden __cmpsf2
+0003690c g     F .text	00000104 FreeRTOS_GetRemoteAddress
+0001a0c4 g     F .text	00000054 _DWHCIDevice
+00029c94 g     F .text	00000044 DWHCIFrameSchedulerNonPeriodicWaitForFrame
+00044990 g       .bss	00000000 __bss_start
+00014f2c g     F .text	00000018 DisableInterrupts
+0002c620 g     F .text	0000009c USBMouseDeviceRegisterStatusHandler
+0001a8d0 g     F .text	00000338 DWHCIDeviceSubmitBlockingRequest
+00017270 g     F .text	00000090 memset
+00016f24 g     F .text	00000198 __cyg_profile_func_enter
+0003e478 g     F .text	00000064 vReleaseNetworkBuffer
+000169bc g     F .text	00000418 main
+00019598 g     F .text	0000011c USPiMassStorageDeviceWrite
+00023734 g     F .text	000000f0 USBStandardHub
+0001903c g     F .text	000000bc USPiKeyboardRegisterKeyPressedHandler
+0004f550 g     O .bss	00000058 mailbuffer
+0003f8b0 g     F .text	000000ac .hidden __aeabi_l2f
+00031ae8 g     F .text	000000d0 FreeRTOS_SetAddressConfiguration
+0003fc5c g     F .text	0000006c .hidden __ltsf2
+00011148 g     F .text	000000fc vListInsert
+0003615c g     F .text	000001d8 xTCPTimerCheck
+00022ad4 g     F .text	00000078 USBEndpointSetMaxPacketSize
+0003ebe4 g     F .text	00000000 .hidden __aeabi_uidiv
+0003f610 g     F .text	000000a0 .hidden __truncdfsf2
+00013460 g     F .text	0000005c xTaskGetApplicationTaskTag
+00028490 g     F .text	00000734 USBBulkOnlyMassStorageDeviceConfigure
+00032d6c g     F .text	0000004c FreeRTOS_GetDNSServerAddress
+0003f0b8 g     F .text	00000060 .hidden __aeabi_l2d
+0001ff10 g     F .text	000000a0 DWHCITransferStageDataGetURB
+00012728 g     F .text	00000114 vTaskDelayUntil
+00026714 g     F .text	000001f8 SMSC951xDeviceDumpRegs
+0003c1f0 g     F .text	000000c8 xTCPWindowRxEmpty
+00011c44 g     F .text	00000110 xQueueReceiveFromISR
+00030304 g     F .text	000000a4 FreeRTOS_gethostbyname
+00015098 g     F .text	000000e8 SetGpio
+0003f8a0 g     F .text	000000bc .hidden __aeabi_ul2f
+00013f8c g     F .text	00000030 xTaskGetCurrentTaskHandle
+00010348 g     F .text	00000098 vPortISRStartFirstTask
+0003fcd8 g     F .text	00000018 .hidden __aeabi_cfcmple
+00021b2c g     F .text	000000a0 USBDeviceGetHost
+0001a5a8 g     F .text	000000d4 DWHCIDeviceSetConfiguration
+00011454 g     F .text	000000f8 xQueueGenericCreate
+00026ad8 g     F .text	00000094 StringGet
+0003f95c g     F .text	00000198 .hidden __mulsf3
+00021f14 g     F .text	00000124 USBDeviceFactoryGetDevice
+0001f020 g     F .text	00000078 DWHCITransferStageDataGetSubState
+0001503c g     F .text	0000005c SetGpioDirection
+00011658 g     F .text	00000080 xQueueCreateCountingSemaphore
+0003e660 g     F .text	000000d8 vReleaseNetworkBufferAndDescriptor
+00020478 g     F .text	00000194 USBConfigurationParserGetDescriptor
+00023f20 g     F .text	00000b1c USBStandardHubEnumeratePorts
+0001ad6c g     F .text	00000364 DWHCIDeviceInitCore
+0002c1f8 g     F .text	00000428 USBMouseDeviceConfigure
+00026c54 g     F .text	0000009c StringGetLength
+0001bd50 g     F .text	00000084 DWHCIDeviceCompletionRoutine
+00032f40 g     F .text	0000004c FreeRTOS_IsNetworkUp
+00021e70 g     F .text	000000a4 USBDeviceSetAddress
+00019c78 g     F .text	00000100 USPiGamePadGetStatus
+00017b38 g     F .text	00000174 drawLine
+00018ab4 g     F .text	00000060 uspi_assertion_failed
+000256c0 g     F .text	00000050 MACAddressGetSize
+000138dc g     F .text	0000012c xTaskRemoveFromUnorderedEventList
+00021924 g     F .text	00000078 USBDeviceGetSpeed
+00044830 g     F .text.copysignf	00000010 copysignf
+0004eea8 g     O .bss	00000004 xTCPWindowLoggingLevel
+00012f68 g     F .text	000001bc xTaskResumeAll
+00035718 g     F .text	000002f4 FreeRTOS_recv
+00012e6c g     F .text	00000098 vTaskStartScheduler
+00014ce4 g     F .text	00000080 RegisterInterrupt
+0001d8fc g     F .text	000002c4 DWHCIDeviceDumpStatus
+000251e4 g     F .text	00000074 _MACAddress
+0001c1d4 g     F .text	000005bc DWHCIDeviceStartChannel
+00027e18 g     F .text	00000130 uspi_strcmp
+0001a4d4 g     F .text	000000d4 DWHCIDeviceSetAddress
+0003fc54 g     F .text	00000074 .hidden __gesf2
+000337d0 g     F .text	0000021c FreeRTOS_socket
+0003b8f8 g     F .text	00000134 xTCPCheckNewClient
+0002690c g     F .text	00000080 String
+00012344 g     F .text	00000074 xQueueIsQueueFullFromISR
+00029e8c g     F .text	00000088 DWHCIFrameSchedulerPeriodicStartSplit
+0003f6b0 g     F .text	000001c8 .hidden __aeabi_frsub
+0002e814 g     F .text	00000060 uspi_CleanAndInvalidateDataCacheRange
+00032ccc g     F .text	00000054 FreeRTOS_SetIPAddress
+00010868 g     F .text	00000120 vCoRoutineAddToDelayedList
+0002e794 g     F .text	00000080 uspi_LeaveCritical
+0003fcf0 g     F .text	00000018 .hidden __aeabi_fcmpeq
+0003f95c g     F .text	00000198 .hidden __aeabi_fmul
+0001a3ec g     F .text	000000e8 DWHCIDeviceGetDescriptor
+0001d84c g     F .text	000000b0 DWHCIDeviceDumpRegister
+0004484c g     O .data	00000004 next
+0001f160 g     F .text	000000d4 DWHCITransferStageDataIsPeriodic
+0001fc9c g     F .text	000000ac DWHCITransferStageDataGetStatusMask
+0003fcc8 g     F .text	00000028 .hidden __aeabi_cfrcmple
+00028258 g     F .text	00000080 uspi_le2be32
+00029228 g     F .text	00000394 USBBulkOnlyMassStorageDeviceCommand
+000182f8 g     F .text	00000220 printHex
+0001b88c g     F .text	000000cc DWHCIDeviceEnableChannelInterrupt
+00019ac8 g     F .text	000000c8 USPiGamePadAvailable
+00013b48 g     F .text	00000024 vTaskMissedYield
+0001a67c g     F .text	00000170 DWHCIDeviceControlMessage
+0004ee14 g     O .bss	00000004 xNetworkEventQueue
+0002fe68 g     F .text	0000021c vARPAgeCache
+000187c8 g     F .text	0000006c ConnectInterrupt
+00018648 g     F .text	00000064 MsDelay
+0002bafc g     F .text	000000ac DWHCIRootPort
+0001bc0c g     F .text	00000144 DWHCIDeviceTransferStage
+00022388 g     F .text	000000e8 USBEndpoint
+00043428 g     F .text.sinf	000000c4 sinf
+000193bc g     F .text	000000c0 USPiMassStorageDeviceAvailable
+00011d54 g     F .text	00000064 uxQueueMessagesWaiting
+000119c0 g     F .text	00000284 xQueueGenericReceive
+00035428 g     F .text	000002f0 FreeRTOS_accept
+00017a4c g     F .text	00000060 drawPixel
+00031554 g     F .text	000000cc pxDuplicateNetworkBufferWithDescriptor
+0003d29c g     F .text	00000194 xTCPWindowTxHasData
+00035b40 g     F .text	000000e8 FreeRTOS_get_tx_head
+0002a678 g     F .text	00000280 KeyMapTranslate
+0002ec28 g     F .text	0000056c USBStringGetFromDescriptor
+0003fd08 g     F .text	00000018 .hidden __aeabi_fcmplt
+00032ef4 g     F .text	0000004c xIPIsNetworkTaskReady
+0001664c g     F .text	000002e8 graphVariable
+0002b1f8 g     F .text	0000009c USBKeyboardDeviceRegisterKeyPressedHandler
+000233c8 g     F .text	000000d4 USBRequestGetSetupData
+08010000 g       .bss	00000000 _estack
+00029cd8 g     F .text	00000050 DWHCIFrameSchedulerNonPeriodicIsOddFrame
+0003c554 g     F .text	00000104 vTCPWindowCreate
+0003ecd8 g     F .text	00000020 .hidden __aeabi_uidivmod
+000177a8 g     F .text	00000048 enablelogging
+000261d0 g     F .text	0000029c SMSC951xDeviceReceiveFrame
+0002a21c g     F .text	0000010c DWHCIFrameSchedulerPeriodicWaitForFrame
+00024bd8 g     F .text	000000b0 DeviceNameService
+0002cbac g     F .text	00000068 DWHCIFrameSchedulerNoSplitCompleteSplit
+00027fe4 g     F .text	000000c8 uspi_strncpy
+00011310 g     F .text	00000144 xQueueGenericReset
+00044840 g     O .data	00000004 ulCriticalNesting
+0001efa8 g     F .text	00000078 DWHCITransferStageDataSetSubState
+0002bc58 g     F .text	000003c8 DWHCIRootPortInitialize
+0001ffb0 g     F .text	00000078 DWHCITransferStageDataGetFrameScheduler
+0001f848 g     F .text	00000078 DWHCITransferStageDataGetBytesToTransfer
+00032c80 g     F .text	0000004c FreeRTOS_GetIPAddress
+00032e04 g     F .text	00000048 FreeRTOS_GetMACAddress
+00025510 g     F .text	000000d0 MACAddressCopyTo
+0002b3cc g     F .text	0000009c USBKeyboardDeviceRegisterKeyStatusHandlerRaw
+0002cb50 g     F .text	0000005c DWHCIFrameSchedulerNoSplitStartSplit
+00015918 g     F .text	00000038 vPortInitialiseBlocks
+000190f8 g     F .text	000000bc USPiKeyboardRegisterShutdownHandler
+0001d380 g     F .text	000000fc DWHCIDeviceFreeChannel
+0002ace4 g     F .text	000000ec _CUSBKeyboardDevice
+0001bb30 g     F .text	000000dc DWHCIDeviceFlushRxFIFO
+0003f878 g     F .text	00000028 .hidden __floatunsisf
+000228cc g     F .text	000000a0 USBEndpointGetDevice
+0003f5b4 g     F .text	0000005c .hidden __aeabi_d2iz
+000325f4 g     F .text	00000280 usGenerateProtocolChecksum
+00033ff8 g     F .text	000001f0 vSocketBind
+0003fcd8 g     F .text	00000018 .hidden __aeabi_cfcmpeq
+000199e4 g     F .text	000000e4 USPiReceiveFrame
+0001283c g     F .text	00000080 vTaskDelay
+00024da0 g     F .text	00000188 DeviceNameServiceAddDevice
+000214d4 g     F .text	00000140 USBDeviceConfigure
+00027d98 g     F .text	00000080 uspi_strlen
+000231c0 g     F .text	00000078 USBRequestSetStatus
+00019b90 g     F .text	000000e8 USPiGamePadRegisterStatusHandler
+0001dbc0 g     F .text	00000084 DWHCIRegister
+0003ecf8  w    F .text	00000004 .hidden __aeabi_idiv0
+0002a8f8 g     F .text	000001d4 KeyMapGetString
+000173e0 g     F .text	000000a0 memcpy2
+00025834 g     F .text	000000f0 SMSC951xDevice
+00030154 g     F .text	000000ec vARPGenerateRequestPacket
+0001ac08 g     F .text	00000164 DWHCIDeviceSubmitAsyncRequest
+00043b68 g     F .text.__kernel_rem_pio2f	00000980 __kernel_rem_pio2f
+0001a118 g     F .text	000002d4 DWHCIDeviceInitialize
+0001ef30 g     F .text	00000078 DWHCITransferStageDataGetState
+0003dce4 g     F .text	000000d8 ulTCPWindowTxSack
+0002f7f0 g     F .text	000003c0 vARPRefreshCacheEntry
+0001f098 g     F .text	00000050 DWHCITransferStageDataBeginSplitCycle
+00026cf0 g     F .text	00000144 StringAppend
+000176ac g     F .text	00000080 strlen
+00036464 g     F .text	0000005c FreeRTOS_get_rx_buf
+00010000 g     F .text	00000240 pxPortInitialiseStack
+0003fdd4 g     O .rodata	00000004 pRegs
+0001f520 g     F .text	00000078 DWHCITransferStageDataGetSpeed
+0001f9b0 g     F .text	000000a0 DWHCITransferStageDataIsSplitComplete
+00033c44 g     F .text	00000220 FreeRTOS_sendto
+0003c958 g     F .text	000003e0 lTCPWindowRxCheck
+0002e874 g     F .text	000000fc USBString
+0002add0 g     F .text	00000428 USBKeyboardDeviceConfigure
+00044634 g     F .text.floorf	000000d4 floorf
+0003eb5c g     F .text	00000088 xNetworkInterfaceOutput
+00014f14 g     F .text	00000018 EnableInterrupts
+00013a08 g     F .text	00000044 vTaskSetTimeOutState
+00031bb8 g     F .text	0000007c xSendEventToIPTask
+0003f064 g     F .text	00000040 .hidden __aeabi_f2d
+0002e970 g     F .text	000001c4 USBStringCopy
+00031400 g     F .text	000000ac FreeRTOS_NetworkDownFromISR
+00010550 g     F .text	000000c4 vPortEnterCritical
+00021d0c g     F .text	000000bc USBDeviceGetDescriptor
+00032be8 g     F .text	00000098 vReturnEthernetFrame
+00031378 g     F .text	00000088 FreeRTOS_NetworkDown
+0001b674 g     F .text	000000b0 DWHCIDeviceEnableGlobalInterrupts
+00032e4c g     F .text	00000054 FreeRTOS_SetNetmask
+0001df2c g     F .text	00000084 DWHCIRegisterSet
+0002cc14 g     F .text	00000060 DWHCIFrameSchedulerNoSplitTransactionComplete
+00015cf8 g     F .text	000002a0 waterController
+00014c6c g     F .text	00000078 InitInterruptController
+00022c64 g     F .text	000000b8 USBEndpointGetNextPID
+00011db8 g     F .text	0000005c uxQueueMessagesWaitingFromISR
+0002a580 g     F .text	000000f8 KeyMapSetEntry
+0001225c g     F .text	0000006c xQueueIsQueueEmptyFromISR
+0002e128 g     F .text	0000009c USBGamePadDeviceRegisterStatusHandler
+00027a1c g     F .text	00000174 ntoa
+0001d6d8 g     F .text	000000c4 DWHCIDeviceOvercurrentDetected
+0003ed04 g     F .text	00000314 .hidden __subdf3
+0001947c g     F .text	0000011c USPiMassStorageDeviceRead
+000180bc g     F .text	0000023c println
+0004f5bc g     O .bss	00000014 xBoundTcpSocketsList
+0001fde8 g     F .text	0000008c DWHCITransferStageDataIsStageComplete
+000134bc g     F .text	0000007c xTaskCallApplicationTaskHook
+00015c2c g     F .text	000000cc waterGenerator
+00044990 g     O .bss	00000004 g_bStarted
+000141c0 g     F .text	00000084 uxTaskResetEventItemValue
+0001154c g     F .text	0000010c xQueueCreateMutex
+00032874 g     F .text	00000374 usGenerateChecksum
+0003f6bc g     F .text	000001bc .hidden __addsf3
+00018c28 g     F .text	00000384 USPiInitialize
+0003e240 g     F .text	0000019c xNetworkBuffersInitialise
+00026f9c g     F .text	0000008c StringFormat
+0004ed64 g     O .bss	00000004 allocated
+0001f0e8 g     F .text	00000078 DWHCITransferStageDataGetChannelNumber
+0002c020 g     F .text	000000fc USBMouseDevice
+00028cb4 g     F .text	000000f0 USBBulkOnlyMassStorageDeviceWrite
+0001b7c4 g     F .text	000000c8 DWHCIDeviceEnableHostInterrupts
+00014a20 g     F .text	00000054 vEventGroupClearBitsCallback
+000316c4 g     F .text	00000058 FreeRTOS_ReleaseUDPPayloadBuffer
+00018bd4 g     F .text	00000054 free
+
+
